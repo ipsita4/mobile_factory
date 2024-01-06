@@ -43,3 +43,42 @@ This project is a simple Flask application for a Mobile Factory Ordering System.
 - **OS**: I, J
 - **Body**: K, L
 
+- ## Testing
+
+To run the provided unit tests:
+
+```bash
+python test_app.py
+```
+
+# Response Codes
+
+- **201:** Successful order creation.
+- **400:** Invalid order components or structure.
+- **500:** Internal server error.
+
+## Examples
+
+### Valid Order
+
+**Request:**
+
+```json
+{ "components": ["I","A","D","F","K"] }
+```
+
+**Response:**
+```json
+{
+    "order_id": "some-id",
+    "parts": [
+        "Android OS",
+        "LED Screen",
+        "Wide-Angle Camera",
+        "USB-C Port",
+        "Metallic Body"
+    ],
+    "total": 142.3
+}
+
+```
