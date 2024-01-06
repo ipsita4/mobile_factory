@@ -1,6 +1,6 @@
 # Mobile Factory API
 
-This project is a simple Flask application for a Mobile Factory Ordering System. The system allows users to place orders for smartphone components, and it validates the orders based on predefined rules. The application calculates the total price of the selected components and provides relevant information about the order.
+This project is a simple Flask application for a Mobile Factory Ordering System. The system allows users to place orders for smartphone components, and it validates the orders based on predefined rules. The application calculates the total price of the selected components and provides relevant information about the order if the order is valid.
 
 ## Installation
 

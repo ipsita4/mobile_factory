@@ -86,7 +86,7 @@ def create_order():
         components = data.get('components', [])
 
         if validate_order(components):
-            order_id = "some-id"  # You might generate a unique ID here
+            order_id = "some-id"  
             total = calculate_total(components)
             parts = [part_data[component] for component in components]
 
@@ -100,7 +100,7 @@ def create_order():
         else:
             return jsonify({"error": "Invalid order components"}), 400
     except Exception as e:
-        return jsonify({"error": str(e)}), 500
+        return jsonify({"error": str(e)}), 500 #invalid order
 
 if __name__ == '__main__':
     app.run(debug=True)
